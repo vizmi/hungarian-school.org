@@ -20,7 +20,9 @@
     "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json"
   },
   "devEngines": {},
-  "engines": {},
+  "engines": {
+    "node": "4.4.7"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.5.1",
