@@ -1,0 +1,17 @@
+{
+	"folders":
+	[
+		{
+			"name": "east-bay-hun-school project",
+			"path": ".",
+			"folder_exclude_patterns": ["node_modules"]
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "List",
+			"cmd": ["ls"]
+		}
+	]
+}
