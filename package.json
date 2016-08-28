@@ -12,7 +12,7 @@
     "test:watch": "npm test -- --watch",
     "test:cov": "cross-env NODE_ENV=test babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha -- --recursive --require ./test/setup.js",
     "check": "npm run lint && npm run test ",
-     "build": "cross-env NODE_ENV=production webpack src/index.js --config webpack.config.production.js",
+    "build": "cross-env NODE_ENV=production webpack src/index.js --config webpack.config.production.js",
     "preversion": "npm run clean && npm run check",
     "version": "npm run build",
     "postversion": "git push && git push --tags && npm run clean",
@@ -63,6 +63,7 @@
     "webpack-hot-middleware": "^2.7.1"
   },
   "dependencies": {
+    "fbjs-scripts": "^0.5.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
     "react-redux": "^4.4.0",
