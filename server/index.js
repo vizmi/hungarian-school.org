@@ -33,5 +33,7 @@ app.get('*', (req, res) => {
   res.sendFile('index.html', { root: process.env.PWD + '/dist' });
 });
 
-app.listen(port);
+console.log('env: ' + process.env.NODE_ENV);
+console.log('port: ' + process.env.PORT);
 
+app.listen(port);
