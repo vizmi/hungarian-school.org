@@ -30,11 +30,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: process.env.PWD + '/dist' });
+  res.sendFile('index.html', { root: '../dist' });
 });
-
-console.log('env: ' + process.env.NODE_ENV);
-console.log('port: ' + process.env.PORT);
-console.log('path: ' + process.env.PWD);
 
 app.listen(port);
