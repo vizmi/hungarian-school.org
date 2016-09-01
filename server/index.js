@@ -35,5 +35,6 @@ app.get('*', (req, res) => {
 
 console.log('env: ' + process.env.NODE_ENV);
 console.log('port: ' + process.env.PORT);
+console.log('path: ' + process.env.PWD);
 
 app.listen(port);
