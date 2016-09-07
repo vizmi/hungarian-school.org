@@ -25,7 +25,7 @@ module.exports = {
       }
     }),
     new HtmlWebpackPlugin({
-      template: '../build/index.html',
+      template: './build/index.html',
       filename: 'index.html'
     }),
     new ExtractTextPlugin('index.[hash].css', {
