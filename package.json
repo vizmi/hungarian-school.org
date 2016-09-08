@@ -23,7 +23,7 @@
   "devEngines": {},
   "engines": {
     "node": "4.4.7",
-    "npm": "3.10.6"
+    "npm": "3.10.3"
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0",
