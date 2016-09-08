@@ -3,42 +3,35 @@
 	{
 		"selected_items":
 		[
+			[
+				"pro",
+				"production"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 2741,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "webpack.config.production.js",
 			"settings":
 			{
-				"buffer_size": 1227,
+				"buffer_size": 1226,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "/* eslint no-console: 0 */\n\nconst path = require('path');\nconst express = require('express');\nconst webpack = require('webpack');\n\nconst historyApiFallback = require('connect-history-api-fallback');\n\n\nconst app = express();\nconst port = process.env.PORT || 3000;\n\nvar config = process.env.NODE_ENV === 'production'\n  ? config = require('../webpack.config.production')\n  : require('../webpack.config');\n\nconst compiler = webpack(config);\n\n\napp.use(historyApiFallback({\n  verbose: false\n}));\n\napp.use(require('webpack-dev-middleware')(compiler, {\n  publicPath: config.output.publicPath,\n  stats: {\n    colors: true,\n  }\n}));\n\napp.use(require('webpack-hot-middleware')(compiler));\n\napp.get('*', (req, res) => {\n  res.sendFile('index.html', { root: '../dist' });\n});\n\napp.listen(port);\n",
 			"file": "server/index.js",
-			"file_size": 781,
-			"file_write_time": 131171802289304057,
 			"settings":
 			{
-				"buffer_size": 782,
+				"buffer_size": 803,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "webpack.config.js",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 1059,
+				"buffer_size": 2758,
 				"line_ending": "Unix"
 			}
 		}
@@ -89,10 +82,24 @@
 	],
 	"file_history":
 	[
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.gitignore",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/iisnode.yml",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/package.json",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.deployment",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/deploy.cmd",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.production.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/server/index.js",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/iisnode.yml",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/node_modules/rimraf/README.md",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/app/controllers/home.js",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/package.json",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/package.json",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/app.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/iisnode.yml",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/node_modules/fbjs-scripts/node/check-dev-engines.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.gitignore",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.editorconfig",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/east-bay-hun-school.sublime-project",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school.bat"
 	],
 	"find":
@@ -128,90 +135,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2741,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1290,
-								1290
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 90.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "webpack.config.production.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1227,
+						"buffer_size": 1226,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								356,
-								356
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "server/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 782,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								507,
-								530
+								12,
+								12
 							]
 						],
 						"settings":
@@ -231,20 +172,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "webpack.config.js",
+					"buffer": 1,
+					"file": "server/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1059,
+						"buffer_size": 803,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								598,
-								598
+								803,
+								803
 							]
 						],
 						"settings":
@@ -261,6 +202,39 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1088,
+								1088
+							]
+						],
+						"settings":
+						{
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
