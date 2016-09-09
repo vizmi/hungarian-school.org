@@ -5,13 +5,15 @@ const historyApiFallback = require('connect-history-api-fallback');
 const app = express();
 const port = process.env.PORT || 3000;
 
+console.log(port);
+
 var production = process.env.NODE_ENV === 'production';
+
+console.log(production);
 
 if (production) {
   app.use(historyApiFallback({}));
-  app.get('*', (req, res) => {
-    res.sendFile('index.html', { root: '../dist' });
-  });
+  app.use(express.static('./dist'));
 
 } else {
   app.use(historyApiFallback({
