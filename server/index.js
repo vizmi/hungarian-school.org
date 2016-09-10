@@ -5,11 +5,12 @@ const historyApiFallback = require('connect-history-api-fallback');
 const app = express();
 const port = process.env.PORT || 3000;
 
-console.log(port);
+console.log('port: ' + port);
 
 var production = process.env.NODE_ENV === 'production';
 
-console.log(production);
+console.log('production?: ' + production);
+console.log('dirname: ' + __dirname);
 
 if (production) {
   app.use(historyApiFallback({}));

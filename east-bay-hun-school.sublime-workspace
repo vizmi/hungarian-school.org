@@ -3,23 +3,27 @@
 	{
 		"selected_items":
 		[
+			[
+				"pro",
+				"production"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "package.json",
+			"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
 			"settings":
 			{
-				"buffer_size": 2764,
+				"buffer_size": 1596,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "server/index.js",
+			"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
 			"settings":
 			{
-				"buffer_size": 796,
+				"buffer_size": 533,
 				"line_ending": "Unix"
 			}
 		}
@@ -70,13 +74,27 @@
 	],
 	"file_history":
 	[
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.gitignore",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/app.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/dist/index.html",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.production.js",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.js",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/iisnode.yml",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/package.json",
+		"/C/Users/vizha_yco/Documents/js/startbootstrap-agency-gh-pages/index.html",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/package.json",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/server/index.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.production.js",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/package.json",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/app/controllers/home.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.gitignore",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/.gitignore",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.deployment",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/deploy.cmd",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/iisnode.yml",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/node_modules/rimraf/README.md",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/iisnode.yml",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/node_modules/fbjs-scripts/node/check-dev-engines.js",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.editorconfig",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/east-bay-hun-school.sublime-project",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school.bat"
 	],
 	"find":
@@ -117,32 +135,32 @@
 			[
 				{
 					"buffer": 0,
-					"file": "package.json",
+					"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2764,
+						"buffer_size": 1596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1232,
-								1232
+								497,
+								497
 							]
 						],
 						"settings":
 						{
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 45.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -150,19 +168,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "server/index.js",
+					"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 796,
+						"buffer_size": 533,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								316,
-								316
+								67,
+								58
 							]
 						],
 						"settings":
