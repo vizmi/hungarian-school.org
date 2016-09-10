@@ -11,7 +11,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 2806,
+				"buffer_size": 2764,
 				"line_ending": "Unix"
 			}
 		},
@@ -121,15 +121,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2806,
+						"buffer_size": 2764,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2251,
-								2251
+								1232,
+								1232
 							]
 						],
 						"settings":
@@ -142,7 +142,7 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 617.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

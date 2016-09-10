@@ -13,7 +13,7 @@ console.log(production);
 
 if (production) {
   app.use(historyApiFallback({}));
-  app.use(express.static('./dist'));
+  app.use(express.static('../dist'));
 
 } else {
   app.use(historyApiFallback({
