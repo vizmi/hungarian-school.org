@@ -3,10 +3,11 @@ const express = require('express');
 const historyApiFallback = require('connect-history-api-fallback');
 const path = require('path');
 
-const app = express();
 const port = process.env.PORT || 3000;
 const production = process.env.NODE_ENV === 'production';
 const dist = path.join(__dirname, '/..', '/dist');
+
+const app = express();
 
 if (production) {
   app.use(historyApiFallback({}));
@@ -28,6 +29,6 @@ if (production) {
   app.use(require('webpack-hot-middleware')(compiler));
 }
 
-console.log('Starting server on port: ' + port + ' \nin ' + (production ? 'production' : 'development') + ' mode\nfrom ' + dist);
+console.log('Starting server on port: ' + port + ' \n in ' + (production ? 'production' : 'development') + ' mode\n from ' + dist);
 
 app.listen(port);

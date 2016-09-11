@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "East Bay Hungarian School Association home page",
   "main": "src/index.js",
-  "license": "MIT",
+  "license": "MITomen",
   "repository": "https://vizmi@east-bay-hun-school.scm.azurewebsites.net/east-bay-hun-school.git",
   "scripts": {
     "start": "node server/index.js",
