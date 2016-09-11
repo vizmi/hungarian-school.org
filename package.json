@@ -24,11 +24,11 @@
   },
   "devEngines": {
     "node": "4.4.7",
-    "npm": "3.10.6"
+    "npm": "3.10.3"
   },
   "engines": {
     "node": "4.4.7",
-    "npm": "3.10.6"
+    "npm": "3.10.3"
   },
   "devDependencies": {
     "babel": "^6.5.2",
