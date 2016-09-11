@@ -23,10 +23,12 @@
 
   },
   "devEngines": {
-    "node": "4.4.7"
+    "node": "4.4.7",
+    "npm": "3.10.6"
   },
   "engines": {
-    "node": "4.4.7"
+    "node": "4.4.7",
+    "npm": "3.10.6"
   },
   "devDependencies": {
     "babel": "^6.5.2",
