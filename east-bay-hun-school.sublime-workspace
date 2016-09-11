@@ -12,18 +12,10 @@
 	"buffers":
 	[
 		{
-			"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
+			"file": "src/actions/counter.js",
 			"settings":
 			{
-				"buffer_size": 1596,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
-			"settings":
-			{
-				"buffer_size": 533,
+				"buffer_size": 407,
 				"line_ending": "Unix"
 			}
 		}
@@ -70,27 +62,29 @@
 	"expanded_folders":
 	[
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school",
-		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/server"
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/src",
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/src/actions"
 	],
 	"file_history":
 	[
+		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/src/components/Header.js",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/.gitignore",
+		"/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
 		"/C/Users/vizha_yco/Documents/js/azure-demo/app.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/dist/index.html",
 		"/C/Users/vizha_yco/Documents/js/startbootstrap-agency-gh-pages/index.html",
 		"/C/Users/vizha_yco/Documents/js/azure-demo/package.json",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/server/index.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.production.js",
-		"/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/package.json",
 		"/C/Users/vizha_yco/Documents/js/azure-demo/app/controllers/home.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.gitignore",
-		"/C/Users/vizha_yco/Documents/js/azure-demo/.gitignore",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.deployment",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/webpack.config.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/deploy.cmd",
 		"/C/Users/vizha_yco/Documents/js/azure-demo/iisnode.yml",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/node_modules/rimraf/README.md",
-		"/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/iisnode.yml",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/node_modules/fbjs-scripts/node/check-dev-engines.js",
 		"/C/Users/vizha_yco/Documents/js/east-bay-hun-school/.editorconfig",
@@ -135,19 +129,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/express.js",
+					"file": "src/actions/counter.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1596,
+						"buffer_size": 407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								497,
-								497
+								185,
+								185
 							]
 						],
 						"settings":
@@ -164,39 +158,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/vizha_yco/Documents/js/azure-demo/config/config.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 533,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								58
-							]
-						],
-						"settings":
-						{
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

@@ -7,18 +7,20 @@
   "repository": "https://vizmi@east-bay-hun-school.scm.azurewebsites.net/east-bay-hun-school.git",
   "scripts": {
     "start": "node server/index.js",
-    "clean": "rimraf lib dist coverage",
+    "debug": "cross-env DEBUG=express:* node server/index.js",
+    "clean": "rimraf dist",
     "lint": "eslint src test",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register --recursive --require ./test/setup.js",
-    "test:watch": "npm test -- --watch",
-    "test:cov": "cross-env NODE_ENV=test babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha -- --recursive --require ./test/setup.js",
-    "check": "npm run lint && npm run test ",
     "build": "cross-env NODE_ENV=production webpack src/index.js --config webpack.config.production.js",
-    "preversion": "npm run clean && npm run check",
-    "version": "npm run build",
-    "postversion": "git push && git push --tags && npm run clean",
-    "prepublish": "npm run clean && npm run build",
-    "postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json"
+
+    "test:watch": "npm test -- --watch",
+    "check": "npm run lint && npm run test ",
+    "prebuild": "npm run clean && npm run check",
+    "postbuild": "git add . && git commit -m \"production release\" && git push azure master",
+
+    "_postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
+    "_test:cov": "cross-env NODE_ENV=test babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha -- --recursive --require ./test/setup.js"
+
   },
   "devEngines": {
     "node": "4.4.7"

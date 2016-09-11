@@ -13,7 +13,7 @@ export function decrement() {
   };
 }
 
-export function incrementAsync(delay = 1000) {
+export function incrementAsync(delay = 3000) {
   return dispatch => {
     setTimeout(() => {
       dispatch(increment());

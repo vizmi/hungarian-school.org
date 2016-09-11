@@ -1,20 +1,16 @@
 /* eslint no-console: 0 */
 const express = require('express');
 const historyApiFallback = require('connect-history-api-fallback');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
-
-console.log('port: ' + port);
-
-var production = process.env.NODE_ENV === 'production';
-
-console.log('production?: ' + production);
-console.log('dirname: ' + __dirname);
+const production = process.env.NODE_ENV === 'production';
+const dist = path.join(__dirname, '/..', '/dist');
 
 if (production) {
   app.use(historyApiFallback({}));
-  app.use(express.static('../dist'));
+  app.use(express.static(dist));
 
 } else {
   app.use(historyApiFallback({
@@ -31,5 +27,7 @@ if (production) {
   }));
   app.use(require('webpack-hot-middleware')(compiler));
 }
+
+console.log('Starting server on port: ' + port + ' \nin ' + (production ? 'production' : 'development') + ' mode\nfrom ' + dist);
 
 app.listen(port);
