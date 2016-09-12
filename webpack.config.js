@@ -36,12 +36,16 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.scss$/,
-        loaders: [
-          'style?sourceMap',
-          'css?sourceMap&modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]!sass'
-        ]
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract(
+          "style-loader?sourceMap",
+          "css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]")
       }
+//      ,
+//      {
+//        test: /\.scss$/,
+//        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass')
+//      }
     ]
   },
 };

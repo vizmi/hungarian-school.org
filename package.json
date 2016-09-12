@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "East Bay Hungarian School Association home page",
   "main": "src/index.js",
-  "license": "MITomen",
+  "license": "MIT",
   "repository": "https://vizmi@east-bay-hun-school.scm.azurewebsites.net/east-bay-hun-school.git",
   "scripts": {
     "start": "node server/index.js",
@@ -12,15 +12,12 @@
     "lint": "eslint src test",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register --recursive --require ./test/setup.js",
     "build": "cross-env NODE_ENV=production webpack src/index.js --config webpack.config.production.js",
-
     "test:watch": "npm test -- --watch",
     "check": "npm run lint && npm run test ",
     "prebuild": "npm run clean && npm run check",
     "postbuild": "git add . && git commit -m \"production release\" && git push azure master",
-
     "_postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
     "_test:cov": "cross-env NODE_ENV=test babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha -- --recursive --require ./test/setup.js"
-
   },
   "devEngines": {
     "node": "4.4.7",
@@ -54,9 +51,9 @@
     "jsdom": "^7.2.2",
     "mocha": "^2.4.5",
     "node-sass": "^3.7.0",
-    "react-addons-test-utils": "^15.0.0",
-    "rimraf": "^2.5.2",
     "react": "^15.0.0",
+    "react-addons-test-utils": "^15.0.0",
+    "react-bootstrap": "^0.30.3",
     "react-css-modules": "^3.7.6",
     "react-dom": "^15.0.0",
     "react-redux": "^4.4.0",
@@ -68,6 +65,7 @@
     "redux-devtools-log-monitor": "^1.0.4",
     "redux-logger": "^2.5.2",
     "redux-thunk": "^1.0.3",
+    "rimraf": "^2.5.2",
     "sass-loader": "^3.2.0",
     "sinon": "^1.17.3",
     "style-loader": "^0.13.0",
