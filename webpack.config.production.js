@@ -38,21 +38,20 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         loaders: ['babel'],
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         loader: ExtractTextPlugin.extract(
-          "style-loader?sourceMap",
-          "css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]")
+          "style-loader",
+          "css-loader")
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/i,
+        loader: 'url-loader?limit=100000'
       }
-//      ,
-//      {
-//        test: /\.scss$/,
-//        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass')
-//      }
     ]
   },
 };

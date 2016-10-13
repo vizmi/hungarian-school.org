@@ -1,24 +1,26 @@
+import Style from '../style/sandstone.min.css';
+import FixStyle from '../style/navbar-fix.css';
 import React, { Component, PropTypes } from 'react';
 import Header from '../components/Header';
-import cssModules from 'react-css-modules';
-import styles from '../style/index.scss';
+import { Grid, Row, Col } from 'react-bootstrap';
 
-@cssModules(styles)
 export default class Main extends Component {
   static propTypes = {
-    styles: PropTypes.object,
     children: PropTypes.any.isRequired
   };
 
   render() {
-    const { styles } = this.props;
-
     return (
-      <div className={styles.container}>
-        <Header />
-        {/* this will render the child routes */}
-        {this.props.children}
-      </div>
+      <Grid fluid>
+        <Row>
+          <Col md={12}>
+            <Header />
+          </Col>
+          <Col md={12}>
+            {this.props.children}
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }

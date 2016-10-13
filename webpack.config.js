@@ -32,20 +32,20 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel'],
+        loader: 'babel',
         exclude: /node_modules/
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract(
+        loaders: [
           "style-loader?sourceMap",
-          "css-loader?sourceMap&modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]")
+          "css-loader"
+        ]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/i,
+        loader: 'url-loader?limit=100000'
       }
-//      ,
-//      {
-//        test: /\.scss$/,
-//        loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass')
-//      }
     ]
   },
 };

@@ -1,22 +1,40 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router';
-import cssModules from 'react-css-modules';
-import styles from '../style/header.scss';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
-@cssModules(styles)
 export default class Header extends Component {
   static propTypes = {
-    styles: PropTypes.object
   };
 
   render() {
     return (
-      <div>
-        <h2 styleName="h2">east-bay-hun-school</h2>
-
-        <Link to={'/'}>Home Page</Link> -&nbsp;
-        <Link to={'/another'}>Another Page</Link>
-      </div>
+      <Navbar fluid fixedTop>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="/">East Bay Magyar Iskola</Link>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav>
+            <LinkContainer to="/who">
+              <NavItem eventKey={1}> Kik vagyunk? </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/what">
+              <NavItem eventKey={2}> Mit csinálunk? </NavItem>
+            </LinkContainer>
+            <LinkContainer to="/join">
+              <NavItem eventKey={3}> Hogyan tudok csatlakozni? </NavItem>
+            </LinkContainer>
+          </Nav>
+          <Nav pullRight>
+            <LinkContainer to="/contact">
+              <NavItem eventKey={4}> Elérhetőségeink </NavItem>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }
