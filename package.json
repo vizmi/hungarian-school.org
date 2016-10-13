@@ -1,7 +1,7 @@
 {
   "name": "east-bay-hun-school",
   "version": "0.1.0",
-  "description": "East Bay Hungarian School Association home page",
+  "description": "East Bay Hungarian Educational Group homepage",
   "main": "src/index.js",
   "license": "MIT",
   "repository": "https://vizmi@east-bay-hun-school.scm.azurewebsites.net/east-bay-hun-school.git",
