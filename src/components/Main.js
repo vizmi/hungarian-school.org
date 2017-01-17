@@ -16,6 +16,8 @@ export default class Main extends Component {
           <Col md={12}>
             <Header />
           </Col>
+        </Row>
+        <Row>
           <Col md={12}>
             {this.props.children}
           </Col>

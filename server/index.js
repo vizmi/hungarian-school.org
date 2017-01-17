@@ -1,3 +1,4 @@
+"use strict";
 /* eslint no-console: 0 */
 const express = require('express');
 const historyApiFallback = require('connect-history-api-fallback');
@@ -8,6 +9,22 @@ const production = process.env.NODE_ENV === 'production';
 const dist = path.join(__dirname, '/..', '/dist');
 
 const app = express();
+
+// set cookie based on the virtual host requested
+app.use(function(req, res, next) {
+  //console.log(req.headers.host);
+  console.log(req.cookies);
+
+  let lang = 'en';
+  if (req.headers.host.endsWith('magyar-iskola.org')) {
+    lang = 'hu';
+  }
+  res.cookie('lang', lang);
+
+  console.log(res.cookies);
+
+  next();
+});
 
 if (production) {
   app.use(historyApiFallback({}));
@@ -27,10 +44,6 @@ if (production) {
   }));
   app.use(require('webpack-hot-middleware')(compiler));
 }
-
-// debug the host string question
-app.use(function(req, res) { console.log(req.headers.host); });
-// debug only
 
 console.log('Starting server on port: ' + port + ' \n in ' + (production ? 'production' : 'development') + ' mode\n from ' + dist);
 
