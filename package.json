@@ -13,9 +13,9 @@
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register --recursive --require ./test/setup.js",
     "build": "cross-env NODE_ENV=production webpack src/index.js --config webpack.config.production.js",
     "test:watch": "npm test -- --watch",
-    "check": "npm run lint && npm run test ",
+    "check": "npm run lint && npm run test",
     "prebuild": "npm run clean && npm run check",
-    "release": "git add . && git commit -m \"production release\" && git push azure master",
+    "release": "git add . && git commit -m \"production release\" && git push github master",
     "_postinstall": "node node_modules/fbjs-scripts/node/check-dev-engines.js package.json",
     "_test:cov": "cross-env NODE_ENV=test babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha -- --recursive --require ./test/setup.js"
   },

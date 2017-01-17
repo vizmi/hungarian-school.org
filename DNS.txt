@@ -1,0 +1,20 @@
+DNS Settings
+
+
+Deleted from domain records:
+
+Type	Name	Value			TTL
+A		@		184.168.221.57	600 seconds
+A		@		Parked			600 seconds
+CNAME	www		@				1 hour
+
+
+Added to domain records:
+
+Type	Name	Value								TTL
+A		*		40.118.255.59						1 Hour
+A		@		40.118.255.59						1 Hour
+A		www		40.118.255.59						1 Hour
+TXT		*		hungarian-school.azurewebsites.net	1 Hour
+TXT		@		hungarian-school.azurewebsites.net	1 Hour
+TXT		www		hungarian-school.azurewebsites.net	1 Hour

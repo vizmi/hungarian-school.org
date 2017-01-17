@@ -12,7 +12,6 @@ const app = express();
 if (production) {
   app.use(historyApiFallback({}));
   app.use(express.static(dist));
-
 } else {
   app.use(historyApiFallback({
     verbose: true
@@ -28,6 +27,10 @@ if (production) {
   }));
   app.use(require('webpack-hot-middleware')(compiler));
 }
+
+// debug the host string question
+app.use(function(req, res) { console.log(req.headers.host); });
+// debug only
 
 console.log('Starting server on port: ' + port + ' \n in ' + (production ? 'production' : 'development') + ' mode\n from ' + dist);
 
