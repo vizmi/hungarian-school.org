@@ -31,12 +31,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.js$/,
+        test: /\.js$/i,
         loader: 'babel',
         exclude: /node_modules/
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         loaders: [
           "style-loader?sourceMap",
           "css-loader"
@@ -45,6 +45,10 @@ module.exports = {
       {
         test: /\.(png|woff|woff2|eot|ttf|svg|jpg|jpeg)$/i,
         loader: 'url-loader?limit=100000'
+      },
+      {
+        test: /\.json$/i,
+        loader: 'json-loader'
       }
     ]
   },

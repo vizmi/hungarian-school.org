@@ -13,15 +13,12 @@ const app = express();
 // set cookie based on the virtual host requested
 app.use(function(req, res, next) {
   //console.log(req.headers.host);
-  console.log(req.cookies);
 
   let lang = 'en';
   if (req.headers.host.endsWith('magyar-iskola.org')) {
     lang = 'hu';
   }
   res.cookie('lang', lang);
-
-  console.log(res.cookies);
 
   next();
 });

@@ -50,6 +50,7 @@
     "image-webpack-loader": "^2.0.0",
     "isparta": "^4.0.0",
     "jsdom": "^7.2.2",
+    "json-loader": "^0.5.4",
     "mocha": "^2.4.5",
     "node-sass": "^3.7.0",
     "react": "^15.0.0",
