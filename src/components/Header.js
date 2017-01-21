@@ -27,9 +27,6 @@ export default class Header extends Component {
             <LinkContainer to="/what">
               <NavItem eventKey={2}>{txt.whatWeDo}</NavItem>
             </LinkContainer>
-            <LinkContainer to="/join">
-              <NavItem eventKey={3}>{txt.howToJoin}</NavItem>
-            </LinkContainer>
           </Nav>
           <Nav pullRight>
             <LinkContainer to="/contact">

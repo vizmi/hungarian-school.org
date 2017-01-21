@@ -18,7 +18,6 @@
     "home.whatWeDo.para2": "Besides the regular classes the school offers plenty of oppurtunities to meet and have fun with families sharing the interest in hungarian traditions.",
     "howToJoin": "How can I join?",
     "moreInfo": "Read more...",
-    "whoAreWe": "Who are we?",
     "whatWeDo": "What do we do?",
     "what.para1": "The goal of our school is to teach its students the hungarian language and culture",
     "what.para2": "We aim to archeive this goal by conducting classes and other educational activities",
@@ -35,8 +34,19 @@
     "what.mini.head": "Mini Class",
     "what.mini.para": "The mini class is for the smallest ones, held on the first Sunday of the month.",
     "what.party.head": "Parties and other events",
-    "what.party.para": "Diverse events in various locations awaits all of our students and their families. You can find the details on our facebook page."
-
+    "what.party.para": "Diverse events in various locations awaits all of our students and their families. You can find the details on our facebook page.",
+    "whoAreWe": "Who are we?",
+    "who.para1": "The idea of the school was born in 2015, from a small group of parents living in the East Bay area of San Francisco. During its first year the school operated as unincorporated nonüprofit organization.",
+    "who.para2": "The community responded well to our first initiatives, it turned out there's a need for such a service. After the completion of our first class year the school has gained non-profit status from IRS.",
+    "who.para3": "The governing body behind the hungarian school is the East Bay Hungarian Educational Group non-profit organization. The board of the organization",
+    "who.president": "President",
+    "who.secretary": "Secretary",
+    "who.treasurer": "Treasurer",
+    "who.director": "Director",
+    "who.hunSchool": "The East Bay Hungarian School",
+    "who.hunSchool.para1": "Our teachers are",
+    "who.hunSchool.Szilvia": "Szilvia was born in Kecskemét, Hungary. This is where she earned her degree as Teacher and Kindergarten Teacher. She moved to California in 2013, Her 2 children are regular attendees on the school.",
+    "who.hunSchool.Erika": "She graduated as a hungarian - history teacher in Hungary. Later she moved to Switzerland and then to the USA. Her hobby - teaching and making ceramics - became her profession. She is working with those students who has very little or no hungarian language command."
   },
   "hu": {
     "contact": "Elérhetőségeink",
@@ -57,7 +67,6 @@
     "home.whatWeDo.para2": "A tantermi oktatás mellett az iskola változatos programokat kínál a gyerekek és szüleik számára, hogy találkozzanak, megismerkedjenek más családokkal, és együtt jól érezzék magukat.",
     "howToJoin": "Hogyan tudok csatlakozni?",
     "moreInfo": "További információk...",
-    "whoAreWe": "Kik vagyunk?",
     "whatWeDo": "Mit csinálunk?",
     "what.para1": "A Magyar Iskola célja hogy segítsen a tanulóinak megismerkedni a magyar nyelv és a kultúra értékeivel.",
     "what.para2": "Ezt elsősorban tantermi foglalkozások, másodsorban egyéb szabadidős programok keretében igyekszünk véghezvinni.",
@@ -74,6 +83,18 @@
     "what.mini.head": "Mini csoport",
     "what.mini.para": "A mini csoportba a legkisebbeket várjuk, minden hónap első vasárnapján tantermünkben.",
     "what.party.head": "Partik, egyéb rendezvények",
-    "what.party.para": "Változatos helyszineken és programokkal várunk, a részleteket az facebook oldalunkon találod!"
+    "what.party.para": "Változatos helyszineken és programokkal várunk, a részleteket az facebook oldalunkon találod!",
+    "whoAreWe": "Kik vagyunk?",
+    "who.para1": "Az East Bay Magyar Iskola ötlete 2015 nyarán született meg. Az ötletgazdák az San Francisco-i öböl keleti részén (vagy ahogy errefelé mondják: az East Bay Area-ban) élő magyar származású szülők voltak. Az első tanév során az iskola bejegyzetlen non-profit státuszban üzemelt.",
+    "who.para2": "A kezdeti szárnypróbálgatások bebizonyították, hogy van igény és érdeklődés az iskola tevékenységére. Az első sikeres tanév lezárást követően, 2016 nyarán került sor az iskola non-profit státuszának bejegyeztetésére. Ennek köszönhetően az iskola magasabb szinvonalú tanterembe költözhet és lehetővé vált adományok gyűjtése is.",
+    "who.para3": "Az iskola szervezését és vezetését a Az East Bay Hungarian Educational Group non-profit szervezet végzi. A szervezet vezetősége",
+    "who.president": "Elnök",
+    "who.secretary": "Titkár",
+    "who.treasurer": "Pénztáros",
+    "who.director": "Igazgató",
+    "who.hunSchool": "Az East Bay Magyar Iskola",
+    "who.hunSchool.para1": "Az iskola oktatói",
+    "who.hunSchool.Szilvia": "Szilvia Kecskeméten született, és itt szerezte diplomáját is, Tanító - óvodapedagógos szakon. 2013-ban költözött Kaliforniába családjával. 2 gyermeke rendszeresen jár a magyar iskola foglalkozásaira.",
+    "who.hunSchool.Erika": "Magyar - tortenelem szakos tanarkent vegeztem Magyarorszagon. Ezutan Svajcba, majd az USA-ba koltoztem, ahol hobbim a keramia keszites es tanitas valt fo foglalkozasomma. Az iskolaban azokkal foglalkozik, akik egyaltalan nem, vagy minimalis szinten beszelnek magyarul."
   }
 }
