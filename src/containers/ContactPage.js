@@ -38,7 +38,7 @@ export default class ContactPage extends Component {
             </Well>
             <Well bsSize="small">
               <p> {txt['contact.email']}:
-                <a href="mailto:hungarianschool2016@gmail.com">hungarianschool2016@gmail.com</a>
+                <a href={'mailto:' + txt['contact.email.address']}>{txt['contact.email.address']}</a>
               </p>
             </Well>
           </Col>
