@@ -9,6 +9,7 @@ export default class ContactPage extends Component {
 
   render() {
     const txt = texts[this.props.language];
+    const mailto = `mailto:${txt['contact.email.address']}`;
 
     return (
       <Grid fluid>
@@ -38,7 +39,9 @@ export default class ContactPage extends Component {
             </Well>
             <Well bsSize="small">
               <p> {txt['contact.email']}:
-                <a href={'mailto:' + txt['contact.email.address']}>{txt['contact.email.address']}</a>
+                <a href={mailto}>
+                  {txt['contact.email.address']}
+                </a>
               </p>
             </Well>
           </Col>
